@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [New York]">
+  <test thread-count="5" name="Testing Login(failed)">
+    <classes>
+      <class name="tests.Login">
+        <methods>
+          <include name="startDriver"/>
+          <include name="quitDriver"/>
+          <include name="LoginWithInvalidCredential" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- tests.Login -->
+    </classes>
+  </test> <!-- Testing Login(failed) -->
+</suite> <!-- Failed suite [New York] -->

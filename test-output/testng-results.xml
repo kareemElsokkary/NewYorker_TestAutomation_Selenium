@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-01T12:10:27 MEZ" name="Default suite" finished-at="2024-03-01T12:10:33 MEZ" duration-ms="5240">
+    <groups>
+    </groups>
+    <test started-at="2024-03-01T12:10:27 MEZ" name="Default test" finished-at="2024-03-01T12:10:33 MEZ" duration-ms="5240">
+      <class name="tests.Registration">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:tests.Registration@534a5a98]" started-at="2024-03-01T12:10:27 MEZ" name="startDriver" finished-at="2024-03-01T12:10:29 MEZ" duration-ms="2117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="RegisterExistsUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.Registration@534a5a98]" started-at="2024-03-01T12:10:29 MEZ" name="RegisterExistsUser" data-provider="Account Details" finished-at="2024-03-01T12:10:32 MEZ" duration-ms="2878" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NewFirstName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewLastName]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test035@test.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterExistsUser -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.Registration@534a5a98]" started-at="2024-03-01T12:10:32 MEZ" name="quitDriver" finished-at="2024-03-01T12:10:33 MEZ" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- tests.Registration -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

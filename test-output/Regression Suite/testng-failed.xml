@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression Suite]">
+  <test thread-count="5" name="Testing Register(failed)">
+    <classes>
+      <class name="tests.Registration">
+        <methods>
+          <include name="startDriver"/>
+          <include name="quitDriver"/>
+          <include name="RegisterWithNewUser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.Registration -->
+    </classes>
+  </test> <!-- Testing Register(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->
