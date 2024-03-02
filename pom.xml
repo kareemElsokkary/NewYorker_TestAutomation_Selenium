@@ -20,7 +20,9 @@
                 <configuration>
 			
                   <suiteXmlFiles>                       
-					   <suiteXmlFile>C:\Users\Kareem ELsokkary\eclipse-workspace\NewYorkerDemo\TestNG.xml</suiteXmlFile>
+					   <suiteXmlFile>${Register.xml}</suiteXmlFile>
+					   <suiteXmlFile>${Login.xml}</suiteXmlFile>
+					    <suiteXmlFile>${RegressionTesting.xml}</suiteXmlFile>
                     </suiteXmlFiles>  
                 </configuration>
      

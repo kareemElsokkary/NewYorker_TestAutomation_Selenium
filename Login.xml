@@ -1,0 +1,10 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<suite name = "Regression Suite">
+<parameters name="browser" value="chrome-headless"></parameters>
+   <test name = "Testing Login">
+    
+      <classes>
+         <class name = "tests.Login" />
+      </classes>
+   </test>
+</suite>
