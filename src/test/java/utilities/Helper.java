@@ -62,7 +62,7 @@ public class Helper {
 		System.out.println("====================================");
 		
 	}
-
+/*
 	public static void WaitUntilElementsDisplayed(WebDriver driver, String path) {
 
 		WebElement revealed = driver.findElement(By.xpath(path));
@@ -74,4 +74,5 @@ public class Helper {
 		});
 
 	}
+	*/
 }

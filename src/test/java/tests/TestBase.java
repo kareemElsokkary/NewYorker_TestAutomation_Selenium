@@ -17,6 +17,10 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+
+
 
 
 
@@ -30,19 +34,33 @@ public class TestBase
 	    }
 	 
 	 
-	
+	@Parameters("browser")
 	@BeforeMethod
-	public void startDriver() {
-		String chromePath = System.getProperty("user.dir") + "\\drivers\\chromedriver.exe";
-	   driver = new ChromeDriver();
+	public void startDriver(@Optional("chrome-headless") String browser) {
+		 if(browser.equalsIgnoreCase("chrome"))
+			{
+		 String chromePath = System.getProperty("user.dir") + "\\drivers\\chromedriver.exe";
+		ChromeOptions options = new ChromeOptions();
+		driver = new ChromeDriver();
 		driver.get(getApplicationURL());
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		
-		
-	}
+			}
+		 else if(browser.equalsIgnoreCase("chrome-headless"))
+			{
+			 String chromePath = System.getProperty("user.dir") + "\\drivers\\chromedriver.exe";
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--headless=new");
+				driver = new ChromeDriver(options);
+				driver.get(getApplicationURL());
+				driver.manage().window().maximize();
+				driver.manage().deleteAllCookies();
+					
+			}
+			}
 	
-	@AfterMethod
+	
+		@AfterMethod
 	public void quitDriver() {
 
 			driver.quit();

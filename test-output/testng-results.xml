@@ -1,17 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-01T12:10:27 MEZ" name="Default suite" finished-at="2024-03-01T12:10:33 MEZ" duration-ms="5240">
+  <suite started-at="2024-03-01T23:24:05 MEZ" name="Regression Suite" finished-at="2024-03-01T23:24:34 MEZ" duration-ms="28295">
     <groups>
     </groups>
-    <test started-at="2024-03-01T12:10:27 MEZ" name="Default test" finished-at="2024-03-01T12:10:33 MEZ" duration-ms="5240">
-      <class name="tests.Registration">
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:tests.Registration@534a5a98]" started-at="2024-03-01T12:10:27 MEZ" name="startDriver" finished-at="2024-03-01T12:10:29 MEZ" duration-ms="2117" status="PASS">
+    <test started-at="2024-03-01T23:24:05 MEZ" name="Testing Login" finished-at="2024-03-01T23:24:17 MEZ" duration-ms="12001">
+      <class name="tests.Login">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.Login@d23e042]" started-at="2024-03-01T23:24:05 MEZ" name="startDriver" finished-at="2024-03-01T23:24:07 MEZ" duration-ms="1922" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="RegisterExistsUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.Registration@534a5a98]" started-at="2024-03-01T12:10:29 MEZ" name="RegisterExistsUser" data-provider="Account Details" finished-at="2024-03-01T12:10:32 MEZ" duration-ms="2878" status="PASS">
+        <test-method signature="LoginwithValidCredential(java.lang.String,java.lang.String)[pri:1, instance:tests.Login@d23e042]" started-at="2024-03-01T23:24:07 MEZ" name="LoginwithValidCredential" data-provider="Account" finished-at="2024-03-01T23:24:10 MEZ" duration-ms="2391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test035@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginwithValidCredential -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.Login@d23e042]" started-at="2024-03-01T23:24:10 MEZ" name="quitDriver" finished-at="2024-03-01T23:24:10 MEZ" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.Login@d23e042]" started-at="2024-03-01T23:24:10 MEZ" name="startDriver" finished-at="2024-03-01T23:24:12 MEZ" duration-ms="1679" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="LoginWithInvalidCredential(java.lang.String,java.lang.String)[pri:2, instance:tests.Login@d23e042]" started-at="2024-03-01T23:24:12 MEZ" name="LoginWithInvalidCredential" data-provider="Account" finished-at="2024-03-01T23:24:14 MEZ" duration-ms="2105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test021@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wrongpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInvalidCredential -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.Login@d23e042]" started-at="2024-03-01T23:24:14 MEZ" name="quitDriver" finished-at="2024-03-01T23:24:14 MEZ" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.Login@d23e042]" started-at="2024-03-01T23:24:14 MEZ" name="startDriver" finished-at="2024-03-01T23:24:16 MEZ" duration-ms="1792" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="LoginWithInvalidCredential(java.lang.String,java.lang.String)[pri:2, instance:tests.Login@d23e042]" started-at="2024-03-01T23:24:16 MEZ" name="LoginWithInvalidCredential" data-provider="Account" finished-at="2024-03-01T23:24:17 MEZ" duration-ms="1659" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test021test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInvalidCredential -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.Login@d23e042]" started-at="2024-03-01T23:24:17 MEZ" name="quitDriver" finished-at="2024-03-01T23:24:17 MEZ" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- tests.Login -->
+    </test> <!-- Testing Login -->
+    <test started-at="2024-03-01T23:24:17 MEZ" name="Testing Register" finished-at="2024-03-01T23:24:34 MEZ" duration-ms="16257">
+      <class name="tests.Registration">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.Registration@3e62d773]" started-at="2024-03-01T23:24:17 MEZ" name="startDriver" finished-at="2024-03-01T23:24:19 MEZ" duration-ms="1550" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="RegisterWithNewUser(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.Registration@3e62d773]" started-at="2024-03-01T23:24:19 MEZ" name="RegisterWithNewUser" data-provider="Account Details" finished-at="2024-03-01T23:24:29 MEZ" duration-ms="10388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AutomationTesting]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ Tester]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterWithNewUser -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.Registration@3e62d773]" started-at="2024-03-01T23:24:29 MEZ" name="quitDriver" finished-at="2024-03-01T23:24:30 MEZ" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.Registration@3e62d773]" started-at="2024-03-01T23:24:30 MEZ" name="startDriver" finished-at="2024-03-01T23:24:31 MEZ" duration-ms="1643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="RegisterExistsUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.Registration@3e62d773]" started-at="2024-03-01T23:24:31 MEZ" name="RegisterExistsUser" data-provider="Account Details" finished-at="2024-03-01T23:24:34 MEZ" duration-ms="2388" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,11 +177,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterExistsUser -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.Registration@534a5a98]" started-at="2024-03-01T12:10:32 MEZ" name="quitDriver" finished-at="2024-03-01T12:10:33 MEZ" duration-ms="206" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.Registration@3e62d773]" started-at="2024-03-01T23:24:34 MEZ" name="quitDriver" finished-at="2024-03-01T23:24:34 MEZ" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- tests.Registration -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Testing Register -->
+  </suite> <!-- Regression Suite -->
 </testng-results>
