@@ -29,8 +29,7 @@ public class TestBase
 	        // You can read this from a configuration file or pass it as a system property
 	        return "https://www.newyorker.de/";
 	    }
-	 
-	 
+	  
 	@Parameters("browser")
 	@BeforeMethod
 	public void startDriver(@Optional("chrome-headless") String browser) {
