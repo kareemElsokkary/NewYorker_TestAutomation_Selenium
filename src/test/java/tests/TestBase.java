@@ -21,9 +21,6 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 
-
-
-
 public class TestBase 
 {
 	public static WebDriver driver ; 
