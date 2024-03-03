@@ -1,7 +1,7 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <suite name = "Regression Suite">
-<parameters name="browser" value="chrome-headless"></parameters>
-   <test name = "Testing Login">
+    <parameter name="browser" value="chrome-headless" />
+   <test name = "Testing Login">   
       <classes>
          <class name = "tests.Login" />
       </classes>
@@ -17,6 +17,13 @@
    
       <classes>
          <class name = "tests.Registration" />
+      </classes>
+   </test>
+   
+       <test name = "Testing Mobile App">
+   
+      <classes>
+         <class name = "tests.MobileApp" />
       </classes>
    </test>
 </suite>

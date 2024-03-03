@@ -39,7 +39,7 @@ public class Login extends TestBase{
 		}
 	
 	//define Test Case 1 
-	@Test (groups = { "ValidCredential" },dataProvider = "Account",priority=1)
+	@Test (dataProvider = "Account",priority=1)
 	public void LoginwithValidCredential(String username, String password) {
 		//define objects of Pages
 		welcomePage = new WelcomePage(driver);

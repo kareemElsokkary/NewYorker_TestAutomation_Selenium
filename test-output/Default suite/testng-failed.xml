@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.AddProducts">
+      <class name="tests.MobileApp">
         <methods>
+          <include name="VerifyNewYorkAppisAvailableatGalaryStore"/>
           <include name="startDriver"/>
           <include name="quitDriver"/>
-          <include name="VerifyProductisAddedtoFav"/>
         </methods>
-      </class> <!-- tests.AddProducts -->
+      </class> <!-- tests.MobileApp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
