@@ -1,0 +1,9 @@
+cd C:\Users\Kareem ELsokkary\eclipse-workspace\NewYorker_TA_Selenium
+mvn clean test -Dsurefire.suiteXmlFiles=RegressionTesting.xml
+mvn clean test -Dsurefire.suiteXmlFiles=AddProduct.xml
+mvn clean test -Dsurefire.suiteXmlFiles=LoginValidCred.xml
+mvn clean test -Dsurefire.suiteXmlFiles=LoginInValidCred.xml
+mvn clean test -Dsurefire.suiteXmlFiles=Login.xml
+mvn clean test -Dsurefire.suiteXmlFiles=RegisterExistsUser.xml
+mvn clean test -Dsurefire.suiteXmlFiles=RegisterNewUser.xml
+mvn clean test -Dsurefire.suiteXmlFiles=Register.xml
