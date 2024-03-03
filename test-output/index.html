@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Regression_Suite" class="navigator-link ">
-                    <span>C:\Users\Kareem ELsokkary\eclipse-workspace\NewYorker_TA_Selenium\Login.xml</span>
+                    <span>C:\Users\Kareem ELsokkary\eclipse-workspace\NewYorker_TA_Selenium\RegisterNewUSer.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +103,7 @@
                     <div class="method-list-content passed suite-Regression_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Suite" title="tests.Login" class="method navigator-link" hash-for-method="LoginWithInvalidCredential(Test021@test.com, Wrongpassword)">LoginWithInvalidCredential(Test021@test.com, Wrongpassword)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Suite" title="tests.Login" class="method navigator-link" hash-for-method="LoginWithInvalidCredential(Test021test.com, 123456789)">LoginWithInvalidCredential(Test021test.com, 123456789)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Suite" title="tests.Login" class="method navigator-link" hash-for-method="LoginwithValidCredential(Test035@test.com, 123456789)">LoginwithValidCredential(Test035@test.com, 123456789)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.Registration" class="method navigator-link" hash-for-method="RegisterWithNewUser(AutomationTesting,  Tester, 123456789)">RegisterWithNewUser(AutomationTesting,  Tester, 123456789)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Regression_Suite -->
@@ -131,31 +121,15 @@
           <div class="suite-Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.Login</span>
+              <span class="class-name">tests.Registration</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginWithInvalidCredential(Test021@test.com, Wrongpassword)">
-                  </a> <!-- LoginWithInvalidCredential(Test021@test.com, Wrongpassword) -->
-                  <span class="method-name">LoginWithInvalidCredential</span>
-                  <span class="parameters">(Test021@test.com,Wrongpassword)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginWithInvalidCredential(Test021test.com, 123456789)">
-                  </a> <!-- LoginWithInvalidCredential(Test021test.com, 123456789) -->
-                  <span class="method-name">LoginWithInvalidCredential</span>
-                  <span class="parameters">(Test021test.com,123456789)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginwithValidCredential(Test035@test.com, 123456789)">
-                  </a> <!-- LoginwithValidCredential(Test035@test.com, 123456789) -->
-                  <span class="method-name">LoginwithValidCredential</span>
-                  <span class="parameters">(Test035@test.com,123456789)</span>
+                  <a name="RegisterWithNewUser(AutomationTesting,  Tester, 123456789)">
+                  </a> <!-- RegisterWithNewUser(AutomationTesting,  Tester, 123456789) -->
+                  <span class="method-name">RegisterWithNewUser</span>
+                  <span class="parameters">(AutomationTesting, Tester,123456789)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -163,18 +137,22 @@
         </div> <!-- panel Regression_Suite -->
         <div panel-name="test-xml-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Kareem ELsokkary\eclipse-workspace\NewYorker_TA_Selenium\Login.xml</span>
+            <span class="header-content">C:\Users\Kareem ELsokkary\eclipse-workspace\NewYorker_TA_Selenium\RegisterNewUSer.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Regression Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Testing Login&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Testing Register New user&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.Login&quot;/&gt;
+      &lt;class name=&quot;tests.Registration&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;RegisterWithNewUser&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.Registration --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Testing Login --&gt;
+  &lt;/test&gt; &lt;!-- Testing Register New user --&gt;
 &lt;/suite&gt; &lt;!-- Regression Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,7 +164,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Testing Login (1 class)</span>
+                <span class="test-name">Testing Register New user (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,19 +190,11 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginwithValidCredential')
-data.setCell(0, 2, 'tests.Login')
-data.setCell(0, 3, 3513);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LoginWithInvalidCredential')
-data.setCell(1, 2, 'tests.Login')
-data.setCell(1, 3, 3192);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'LoginWithInvalidCredential')
-data.setCell(2, 2, 'tests.Login')
-data.setCell(2, 3, 3168);
+data.setCell(0, 1, 'RegisterWithNewUser')
+data.setCell(0, 2, 'tests.Registration')
+data.setCell(0, 3, 9930);
 window.suiteTableData['Regression_Suite']= { tableData: data, tableDiv: 'times-div-Regression_Suite'}
 return data;
 }
@@ -244,9 +214,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.Registration</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">RegisterExistsUser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Regression_Suite" class="panel">
@@ -255,42 +232,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.Login</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.Registration</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startDriver(chrome-headless)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">LoginwithValidCredential(Test035@test.com, 123456789)</span>
-                <span class="method-start">2163 ms</span>
+                <span class="method-name">RegisterWithNewUser(AutomationTesting,  Tester, 123456789)</span>
+                <span class="method-start">2069 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">5680 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">startDriver(chrome-headless)</span>
-                <span class="method-start">5859 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">LoginWithInvalidCredential(Test021@test.com, Wrongpassword)</span>
-                <span class="method-start">7760 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">10930 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">startDriver(chrome-headless)</span>
-                <span class="method-start">11078 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">LoginWithInvalidCredential(Test021test.com, 123456789)</span>
-                <span class="method-start">12867 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">16061 ms</span>
+                <span class="method-start">12004 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

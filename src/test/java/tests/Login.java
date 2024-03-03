@@ -11,11 +11,19 @@ import pages.LoginPage;
 import utilities.*;
 
 public class Login extends TestBase{
+	
+	//define object for pages
 	WelcomePage welcomePage ;
 	LoginPage login;
 	HomePage homePage;
 	Helper tools = new Helper();
 	
+	
+	//define Test Cases
+	private String testcas1 ="Login with Valid Credential";
+	private String testcas2 ="Login With Invalid Credential";
+	
+	//define Test Data
 	@DataProvider (name = "Account")
 		public Object[][] dpMethod (Method m){
 			switch (m.getName()) {
@@ -27,46 +35,71 @@ public class Login extends TestBase{
 					{"Test021@test.com", "Wrongpassword"},
 				    {"Test021test.com", "123456789"}};
 			}
-			return null;
-			
+			return null;			
 		}
 	
-	@Test (dataProvider = "Account",priority=1)
+	//define Test Case 1 
+	@Test (groups = { "ValidCredential" },dataProvider = "Account",priority=1)
 	public void LoginwithValidCredential(String username, String password) {
+		//define objects of Pages
 		welcomePage = new WelcomePage(driver);
 		login = new LoginPage(driver);
 		homePage = new HomePage(driver);
 		
-		tools.PrintStartTesting("Login with Valid Credential");
+		//print start Testing
+		
+		tools.PrintStartTesting(testcas1);
+		
+		//Prerequest to login
 		welcomePage.ClickOnbuttonGo();
 		welcomePage.SelectWomenSection();
 		
+		//start login
 		login.StartLogin();
 		login.EnterEmail(username);
 		login.EnterPassword(password);
 		login.clickOnButtonLogin();
+		
+		//verify the login is succeeded
 		homePage.VerifyTheUserLoginsuccesfuly();
+		
+		//take screenshot..
 		tools.captureScreenshot(driver, "Valid Credential");
-		tools.PrintEndTesting("Login with Valid Credential");
+		
+		//print End Testing
+		tools.PrintEndTesting(testcas1);
 		
 	}
+	
+	//start Test case 2
 	@Test (dataProvider = "Account",priority=2)
 	public void LoginWithInvalidCredential(String username, String password) {
+		//define Objects
 		welcomePage = new WelcomePage(driver);
 		login = new LoginPage(driver);
 		homePage = new HomePage(driver);
 		
-		tools.PrintStartTesting("Login With Invalid Credential");
+		//start Printing
+		tools.PrintStartTesting(testcas2);
+		
+		//pre testing
 		welcomePage.ClickOnbuttonGo();
 		welcomePage.SelectWomenSection();
 		
+		//start login
 		login.StartLogin();
 		login.EnterEmail(username);
 		login.EnterPassword(password);
 		login.clickOnButtonLogin();
+		
+		//verify the login is failed
 		login.verifyTheErrorMsgIsDisplayed();
+		
+		//take screenshot..
 		tools.captureScreenshot(driver, "Invalid Credential");
-		tools.PrintEndTesting("Login With Invalid Credential");
+		
+		//End Test
+		tools.PrintEndTesting(testcas2);
 
 	}
 	
