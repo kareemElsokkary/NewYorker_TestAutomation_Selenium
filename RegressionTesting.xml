@@ -2,9 +2,14 @@
 <suite name = "Regression Suite">
 <parameters name="browser" value="chrome-headless"></parameters>
    <test name = "Testing Login">
-    
       <classes>
          <class name = "tests.Login" />
+      </classes>
+   </test>
+   
+      <test name = "Testing Add Product">
+      <classes>
+         <class name = "tests.AddProducts" />
       </classes>
    </test>
    

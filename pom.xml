@@ -19,9 +19,10 @@
                 <version>3.0.0-M5</version>
                 <configuration>
 			
-                  <suiteXmlFiles>                       
+               <suiteXmlFiles>                       
 					   <suiteXmlFile>${Register.xml}</suiteXmlFile>
 					   <suiteXmlFile>${Login.xml}</suiteXmlFile>
+					    <suiteXmlFile>${AddProduct.xml}</suiteXmlFile>
 					    <suiteXmlFile>${RegressionTesting.xml}</suiteXmlFile>
                     </suiteXmlFiles>  
                 </configuration>

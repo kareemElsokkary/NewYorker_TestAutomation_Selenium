@@ -54,25 +54,13 @@ public class Helper {
 
 	public static void PrintStartTesting(String text) {
 		System.out.println("Start Testing...");
-		System.out.println("Test : " + text);
+		System.out.println("Test case : " + text);
 	}
 
 	public static void PrintEndTesting(String text) {
-		System.out.println("Testing "+ text +" is completed");
+		System.out.println("Test case : "+ text +" is Finished");
 		System.out.println("====================================");
 		
 	}
-/*
-	public static void WaitUntilElementsDisplayed(WebDriver driver, String path) {
 
-		WebElement revealed = driver.findElement(By.xpath(path));
-		Wait<WebDriver> wait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(20))
-				.pollingEvery(Duration.ofMillis(300)).ignoring(ElementNotInteractableException.class);
-		wait.until(d -> {
-			revealed.isDisplayed();
-			return true;
-		});
-
-	}
-	*/
 }
