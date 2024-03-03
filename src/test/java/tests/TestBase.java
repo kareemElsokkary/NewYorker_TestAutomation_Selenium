@@ -32,7 +32,7 @@ public class TestBase
 	  
 	@Parameters("browser")
 	@BeforeMethod
-	public void startDriver(@Optional("chrome-headless") String browser) {
+	public void startDriver(@Optional("chrome") String browser) {
 		 if(browser.equalsIgnoreCase("chrome"))
 			{
 		 String chromePath = System.getProperty("user.dir") + "\\drivers\\chromedriver.exe";

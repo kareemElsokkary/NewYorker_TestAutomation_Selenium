@@ -27,6 +27,7 @@
 						<suiteXmlFile>${LoginInValidCred.xml}</suiteXmlFile>
 						<suiteXmlFile>${LoginValidCred.xml}</suiteXmlFile>
 						<suiteXmlFile>${AddProduct.xml}</suiteXmlFile>
+						<suiteXmlFile>${MobileApp.xml}</suiteXmlFile>
 						<suiteXmlFile>${RegressionTesting.xml}</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>

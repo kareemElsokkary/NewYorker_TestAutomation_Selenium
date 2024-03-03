@@ -1,6 +1,6 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <suite name = "Regression Suite">
-<parameters name="browser" value="chrome-headless"></parameters>
+<parameter name="browser" value="chrome-headless" />
    <test name = "Testing Add product">
     
       <classes>
