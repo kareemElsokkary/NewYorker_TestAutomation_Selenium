@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<suite name = "Regression Suite">
+<parameters name="browser" value="chrome-headless"></parameters>
+    <test name="Test Invalid Credential">
+        <classes>
+            <class name="tests.Login">
+                <methods>
+                    <include name="LoginWithInvalidCredential" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
