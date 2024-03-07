@@ -1,6 +1,12 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <suite name = "Regression Suite">
     <parameter name="browser" value="chrome" />
+     <test name = "Testing Register">
+   
+      <classes>
+         <class name = "tests.Registration" />
+      </classes>
+   </test>
    <test name = "Testing Login">   
       <classes>
          <class name = "tests.Login" />
@@ -13,10 +19,10 @@
       </classes>
    </test>
    
-    <test name = "Testing Register">
-   
+   <test name = "Testing Mobile App">
       <classes>
-         <class name = "tests.Registration" />
+         <class name = "tests.MobileApp" />
       </classes>
    </test>
+   
 </suite>
