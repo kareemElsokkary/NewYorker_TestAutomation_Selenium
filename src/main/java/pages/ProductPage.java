@@ -15,6 +15,10 @@ public class ProductPage extends PageBase{
 		super(driver);
 	}
 
+	
+	@FindBy(xpath = "//span[@class='_filter-selected-icon_9wdpr_12']")
+	WebElement checkmark;
+	
 	@FindBy(xpath = "//span[text()=\"NEW IN\"]")
 	WebElement newIn;
 	
@@ -31,7 +35,7 @@ public class ProductPage extends PageBase{
 	@FindBy(xpath = "//*[@class=\"_grid-container_6q2xs_1\"]/div/a/div")
 	WebElement firstIteminMyFav;
 	
-	@FindBy(xpath = "//*[@class=\"_description_1pvjg_23\"]")
+	@FindBy(xpath = "(//*[@class='_description_1pvjg_23'])[1]")
 	WebElement descriptionofFirstItem;
 	
 	@FindBy(xpath = "//*[@class=\"_current-price-container_1pvjg_159\"]")
@@ -70,36 +74,45 @@ public class ProductPage extends PageBase{
 	}
 	
 	public void SelectNewIN() {
-		newIn.click();	
+		newIn.click();
+		WaittoVisibleElment(driver,checkmark);
+		checkmark.isDisplayed();
+		
 	}
 	
 	public void clickOnComingSoon() {
 		comingSoon.click();	
+		WaittoVisibleElment(driver,checkmark);
+		checkmark.isDisplayed();
 	}
 	
 	public void clickOnSale() {
-		sale.click();	
+		sale.click();
+		WaittoVisibleElment(driver,checkmark);
+		checkmark.isDisplayed();
 	}
 	
 	public void clickOnMyFav() {
 		MyFav.click();	
+		WaittoVisibleElment(driver,checkmark);
+		checkmark.isDisplayed();
 	}
 
 	public void SelectfirstItem(WebDriver driver) {
-		WaituntiltheElementToBeClickable(driver,firstItem);
+		WaittoVisibleElment(driver,firstItem);
 		firstItem.click();
-		WaituntiltheElementToBeClickable(driver,AddtoFav);
-		AddtoFav.click();
-		
+		WaittoVisibleElment(driver,AddtoFav);
+		AddtoFav.click();		
 	}
 	
 	public void VerifyProductisAddedtoFav(WebDriver driver) {
-		WaituntiltheElementToBeClickable(driver,firstItem);
+		WaittoVisibleElment(driver,firstItem);
 		firstItem.isDisplayed();
 		
 	}
 	
 	public void GetItemName() {
+		WaittoVisibleElment(driver,descriptionofFirstItem);
 		 Item1 = descriptionofFirstItem.getText();
 		System.out.println("Item's description : "+Item1);
 		
@@ -113,10 +126,11 @@ public class ProductPage extends PageBase{
 	
 	public void VerifyItemName() {
 		String ExpectedItem1 = descriptionofFirstItem.getText();
+		System.out.println("Expected Item's description  : "+ExpectedItem1);
+		System.out.println("Actual Item's description  : "+Item1);
         assert ExpectedItem1.equals(Item1);
-		System.out.println("The Item is added to Fav correctly");
-		System.out.println("Item's description  : "+Item1);
-		
+        System.out.println("Item's description  : "+Item1);
+        System.out.println("The Item is added to Fav correctly");
 	}
 	
 	public void verifyItemPrice() {
@@ -153,11 +167,12 @@ public class ProductPage extends PageBase{
 	
 	public void GotoProductPage(WebDriver driver) {
 		driver.get("https://www.newyorker.de/products/#/?gender=FEMALE");
-		}
+		driver.navigate().refresh();
+	}
 	
-	public void WaituntiltheElementToBeClickable(WebDriver driver, WebElement element) {
+	public void WaittoVisibleElment(WebDriver driver, WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.elementToBeClickable(element));	
+		wait.until(ExpectedConditions.visibilityOfAllElements(element));	
 	}
 	
 	public void WaitInSecond(WebDriver driver, int timer) {
