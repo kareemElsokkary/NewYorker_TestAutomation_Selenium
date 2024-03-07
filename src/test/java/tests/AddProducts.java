@@ -40,8 +40,6 @@ public class AddProducts extends TestBase {
 
 		// Print the End of test
 		tools.PrintEndTesting(testCase1);
-
-
 	}
 
 	@Test(priority = 2)
