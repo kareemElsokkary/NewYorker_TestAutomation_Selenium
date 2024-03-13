@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-07T13:08:01 MEZ" name="Default suite" finished-at="2024-03-07T13:08:24 MEZ" duration-ms="23303">
+  <suite started-at="2024-03-13T15:19:27 MEZ" name="Default suite" finished-at="2024-03-13T15:19:55 MEZ" duration-ms="28066">
     <groups>
     </groups>
-    <test started-at="2024-03-07T13:08:01 MEZ" name="Default test" finished-at="2024-03-07T13:08:24 MEZ" duration-ms="23303">
-      <class name="tests.AddProducts">
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.AddProducts@3aa078fd]" started-at="2024-03-07T13:08:01 MEZ" name="startDriver" finished-at="2024-03-07T13:08:04 MEZ" duration-ms="3269" status="PASS">
+    <test started-at="2024-03-13T15:19:27 MEZ" name="Default test" finished-at="2024-03-13T15:19:55 MEZ" duration-ms="28066">
+      <class name="tests.MobileApp">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.MobileApp@d23e042]" started-at="2024-03-13T15:19:27 MEZ" name="startDriver" finished-at="2024-03-13T15:19:30 MEZ" duration-ms="3207" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="AddItemToFav()[pri:1, instance:tests.AddProducts@3aa078fd]" started-at="2024-03-07T13:08:04 MEZ" name="AddItemToFav" finished-at="2024-03-07T13:08:11 MEZ" duration-ms="6749" status="PASS">
+        <test-method signature="VerifyNewYorkAppisAvailableatGalaryStore()[pri:0, instance:tests.MobileApp@d23e042]" started-at="2024-03-13T15:19:30 MEZ" name="VerifyNewYorkAppisAvailableatGalaryStore" finished-at="2024-03-13T15:19:37 MEZ" duration-ms="6771" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddItemToFav -->
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.AddProducts@3aa078fd]" started-at="2024-03-07T13:08:11 MEZ" name="startDriver" finished-at="2024-03-07T13:08:14 MEZ" duration-ms="3007" status="PASS">
+        </test-method> <!-- VerifyNewYorkAppisAvailableatGalaryStore -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.MobileApp@d23e042]" started-at="2024-03-13T15:19:37 MEZ" name="quitDriver" finished-at="2024-03-13T15:19:37 MEZ" duration-ms="378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.MobileApp@d23e042]" started-at="2024-03-13T15:19:37 MEZ" name="startDriver" finished-at="2024-03-13T15:19:40 MEZ" duration-ms="2797" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,19 +37,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AddProducts@3aa078fd]" started-at="2024-03-07T13:08:11 MEZ" name="quitDriver" finished-at="2024-03-07T13:08:11 MEZ" duration-ms="0" status="PASS">
+        <test-method signature="VerifyNewYorkAppisAvailableatGoogleStore()[pri:0, instance:tests.MobileApp@d23e042]" started-at="2024-03-13T15:19:40 MEZ" name="VerifyNewYorkAppisAvailableatGoogleStore" finished-at="2024-03-13T15:19:46 MEZ" duration-ms="6098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyNewYorkAppisAvailableatGoogleStore -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.MobileApp@d23e042]" started-at="2024-03-13T15:19:46 MEZ" name="quitDriver" finished-at="2024-03-13T15:19:47 MEZ" duration-ms="346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="VerifyProductisAddedtoFav()[pri:2, instance:tests.AddProducts@3aa078fd]" started-at="2024-03-07T13:08:14 MEZ" name="VerifyProductisAddedtoFav" finished-at="2024-03-07T13:08:24 MEZ" duration-ms="10234" status="PASS">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.MobileApp@d23e042]" started-at="2024-03-13T15:19:47 MEZ" name="startDriver" finished-at="2024-03-13T15:19:49 MEZ" duration-ms="2456" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyProductisAddedtoFav -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.AddProducts@3aa078fd]" started-at="2024-03-07T13:08:24 MEZ" name="quitDriver" finished-at="2024-03-07T13:08:24 MEZ" duration-ms="0" status="PASS">
+        </test-method> <!-- startDriver -->
+        <test-method signature="VerifyNewYorkAppisAvailableatAppStore()[pri:1, instance:tests.MobileApp@d23e042]" started-at="2024-03-13T15:19:49 MEZ" name="VerifyNewYorkAppisAvailableatAppStore" finished-at="2024-03-13T15:19:55 MEZ" duration-ms="5642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyNewYorkAppisAvailableatAppStore -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.MobileApp@d23e042]" started-at="2024-03-13T15:19:55 MEZ" name="quitDriver" finished-at="2024-03-13T15:19:55 MEZ" duration-ms="318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- tests.AddProducts -->
+      </class> <!-- tests.MobileApp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
