@@ -26,7 +26,7 @@ public class MobileAppPage extends PageBase {
 	@FindBy(xpath = "//h1[text()=\"NEW YORKER\"]")
 	WebElement AppNameinAppStore;
 
-	@FindBy(xpath = "//*[@id=\"yDmH0d\"]/c-wiz[2]/div/div/div[1]/div[2]/div[1]/div/div/c-wiz/div[2]/div[1]/div/h1")
+	@FindBy(xpath = "(//h1)[1]")
 	WebElement AppNameinGooglePlay;
 
 	@FindBy(xpath = "//div[text()=\"NEW YORKER\"]")
